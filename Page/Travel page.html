@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MAX Company</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../stylesheet/Style_Travel.css'>
+    <script src='../Javascript/Script_main.js'></script>
+    <script src='../Javascript/Script_Travel.js'></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+  <audio id="Visa_Audio" src="../Files/Aud/A2.ogg"></audio>
+    <header>
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="overlay"></div>
+
+        <div class="Container_Nav">
+
+            <nav>
+                <h1 class="brand" ><a class="Logo2" href="../index.html">M<span>A</span>X</a></h1>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#Services_part">Services</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Conttp">Contact</a></li>
+                </ul>
+                <script>
+                    var open = document.getElementById('hamburger');
+                var changeIcon = true;
+                
+                open.addEventListener("click", function(){
+                
+                    var overlay = document.querySelector('.overlay');
+                    var nav = document.querySelector('nav');
+                    var icon = document.querySelector('.menu-toggle i');
+                
+                    overlay.classList.toggle("menu-open");
+                    nav.classList.toggle("menu-open");
+                
+                    if (changeIcon) {
+                        icon.classList.remove("fa-bars");
+                        icon.classList.add("fa-times");
+                
+                        changeIcon = false;
+                    }
+                    else {
+                        icon.classList.remove("fa-times");
+                        icon.classList.add("fa-bars");
+                        changeIcon = true;
+                    }
+                });
+                </script>
+            </nav>
+            <div class="Container_Welcome">
+                <span class="text1">Welcome in <br> MAX Company</span>
+                
+              </div>
+        </div>
+    </header>
+<main class="Cont_Table" id="Services_part">
+  <div class="pricing-table table1">
+    <div class="pricing-header" id="Hed1">
+      <div class="price"><span>$</span>1400</div>
+      <div class="title">Business trip</div>
+    </div>
+    <ul class="pricing-list">
+      <li>With <strong>Tow Years</strong> residency</li>
+      <div class="border"></div>
+      <li>Prepared within <strong>Three Months</strong></li>
+      <div class="border"></div>
+      <li><strong>Unpaid</strong> travel costs</li>
+      <div class="border"></div>
+      <li>There are <strong>no prerequisites</strong></li>
+    </ul>
+    <a onclick="Requestt1()" id="Btn_order1">Order Now</a>
+  </div>
+
+  <div class="pricing-table table2">
+    <div class="pricing-header" id="Hed2">
+      <div class="price"><span>$</span>2300</div>
+      <div class="title">Study trip</div>
+    </div>
+    <ul class="pricing-list">
+      <li>With <strong>Five Years</strong> residency</li>
+      <div class="border"></div>
+      <li>Prepared within <strong>Six Months</strong></li>
+      <div class="border"></div>
+      <li><strong>Driven</strong> travel costs</li>
+      <div class="border"></div>
+      <li><strong>High school diploma</strong></li>
+    </ul>
+    <a onclick="Requestt2()" id="Btn_order2">Order Now</a>
+  </div>
+
+  <div class="pricing-table table3">
+    <div class="pricing-header" id="Hed3">
+      <div class="price"><span>$</span>1800</div>
+      <div class="title">Tourist trip</div>
+    </div>
+    <ul class="pricing-list">
+      <li>With <strong>One Year</strong> residency</li>
+      <div class="border"></div>
+      <li>Prepared within <strong>Two Months</strong></li>
+      <div class="border"></div>
+      <li><strong>Unpaid</strong> travel costs</li>
+      <div class="border"></div>
+      <li>There are <strong>no prerequisites</strong></li>
+    </ul>
+    <a onclick="Requestt3()" id="Btn_order3">Order Now</a>
+  </div>
+
+    </main>
+
+        <main class="Cont_video" id="Vide">
+            <video class="Videoo" src="../Files/Vid/MAX Company.mp4" controls>
+            </video>
+        </main>
+        
+        <footer class="About" id="About">
+            <div class="Our_About">
+                <h1>About Company</h1>
+                <div class="Ouur">
+                  
+                  <div class="Our_service" style="width: calc(100% / 1); background: none; cursor: alias;">
+                    <i class="fas fa-building"></i>
+                    <h2>MAX Company</h2>
+                    <p>MAX Travel and Tourism ... Get a visa as quickly as possible ... Travel to any place in the world and the cheapest cost available to us ...<br> Do you want to obtain a residence ?? .. All that you have to write to us and we will provide you with all your requirements.</p>
+                  </div>
+          
+          
+                </div>
+          
+                <div class="Ouur" >
+                  
+                  <a href="#Services_part"><div class="Our_service">
+                    <i class="fas fa-globe"></i>
+                    <h2>Our services</h2>
+                    <p>Provide visas - organize travel trips - residence</p>
+                  </div></a>
+          
+                  <a href="https://www.google.com/maps"><div class="Our_service">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h2>The map</h2>
+                    <p>Travel to all world while you are in your home</p>
+                  </div></a>
+          
+                  <a href="#Vide"><div class="Our_service">
+                    <i class="fas fa-video"></i>
+                    <h2>World Video</h2>
+                    <p>The video shows the most beautiful cities in the world</p>
+                  </div></a>
+          
+                </div>
+              </div>
+
+        </footer>
+
+        <footer class="Contactt" id="Conttp">
+            <div class="abb">
+            <div class="footer-container">
+                <div class="left-col">
+                    <h1 class="brand" style="color: #dfe6e9; font-size: 7rem;"><a href="../index.html">M<span>A</span>X</a></h1>
+                  <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+                  <p class="rights-text" style="color: #c8d3d8; font-size: 20px;">© 2021 Created By Mytrexa All Rights Reserved.</p>
+                </div>
+        
+                <div class="right-col">
+                  <h1 style="color: #dfe6e9;">Latest News</h1>
+                  <div class="borderL"></div>
+                  <form action="" class="newsletter-form">
+                    <input type="text" class="txtb" placeholder="Enter Your Email">
+                    <input type="submit" class="btn2" value="Submit">
+                  </form>
+                </div>
+              </div>
+            </div>
+
+
+        </footer>
+
+</body>
+</html>
+
+
